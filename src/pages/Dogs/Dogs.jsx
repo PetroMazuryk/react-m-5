@@ -36,6 +36,7 @@ const Dogs = () => {
         onChange={updateQueryString}
       />
       {/* <button onClick={() => setSearchParams({ c: 'Hello' })}>Chance SP</button> */}
+      <button onClick={() => setDogs(dogs)}></button>
       <ul>
         {visibleDogs.map(dog => {
           return (
