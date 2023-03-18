@@ -28,7 +28,7 @@ export const Layout = () => {
           <Outlet />
         </Suspense>
       </main>
-      <footer>Foter</footer>
+      <footer>Footer</footer>
     </div>
   );
 };
