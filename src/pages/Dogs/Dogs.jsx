@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
-
+import { DogWrapper } from './Dogs.styled';
 const Dogs = () => {
   const [dogs, setDogs] = useState([
     'dog-1',
@@ -37,7 +37,7 @@ const Dogs = () => {
       />
       {/* <button onClick={() => setSearchParams({ c: 'Hello' })}>Chance SP</button> */}
       <button onClick={() => setDogs(dogs)}></button>
-      <ul>
+      <DogWrapper>
         {visibleDogs.map(dog => {
           return (
             <li key={dog}>
@@ -51,7 +51,7 @@ const Dogs = () => {
             </li>
           );
         })}
-      </ul>
+      </DogWrapper>
     </div>
   );
 };
