@@ -1,5 +1,6 @@
 import { Suspense, useRef } from 'react';
 import { Link, Outlet, useParams, useLocation } from 'react-router-dom';
+import { BtnLink } from './DogDitails.styled';
 
 const DogDetails = () => {
   const location = useLocation();
@@ -13,7 +14,9 @@ const DogDetails = () => {
     <>
       <h1>DogDetails: {dogId}</h1>
       {/* <Link to="/dogs">Назад до сторінки колекції</Link> */}
-      <Link to={backLinkLocationRef.current}>Назад до сторінки колекції</Link>
+      <BtnLink to={backLinkLocationRef.current}>
+        Назад до сторінки колекції
+      </BtnLink>
       <ul>
         <li>
           <Link to="subbreeds">Підпороди</Link>
