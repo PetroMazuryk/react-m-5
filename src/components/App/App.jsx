@@ -15,7 +15,7 @@ const SubBreeds = lazy(() => import('components/SubBreeds/SubBreeds'));
 //приклад без дефолтного експорту
 const Gallery = lazy(() =>
   import('components/Gallery/Gallery').then(module => {
-    console.log(module);
+    // console.log(module);
     return {
       ...module,
       default: module.Gallery,

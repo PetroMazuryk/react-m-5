@@ -1,7 +1,6 @@
 import { Suspense, useRef } from 'react';
-import { Link, Outlet, useParams, useLocation } from 'react-router-dom';
+import { Outlet, useParams, useLocation } from 'react-router-dom';
 import { BtnLink } from './DogDitails.styled';
-
 const DogDetails = () => {
   const location = useLocation();
   const backLinkLocationRef = useRef(location.state?.from ?? '/dogs');
@@ -19,8 +18,8 @@ const DogDetails = () => {
       </BtnLink>
       <ul>
         <li>
-          <Link to="subbreeds">Підпороди</Link>
-          <Link to="gallery">Галерея</Link>
+          <BtnLink to="subbreeds">Підпороди</BtnLink>
+          <BtnLink to="gallery">Галерея</BtnLink>
         </li>
       </ul>
       <Suspense fallback={<div>LOADING SUBPAGE...</div>}>

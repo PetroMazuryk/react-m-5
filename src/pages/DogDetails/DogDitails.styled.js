@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export const BtnLink = styled(Link)`
   font-size: 28px;
   font-weight: 800;
+
   padding: 6px 14px;
   border-radius: 8px;
   box-shadow: 0 0 10px #2163f3;
